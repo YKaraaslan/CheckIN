@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "98299535962",
+    "project_id": "unitycheckin",
+    "storage_bucket": "unitycheckin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98299535962:android:99ac062151d32f9e94ee63",
+        "android_client_info": {
+          "package_name": "com.unity_checkin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98299535962-v0o7q3khn55nlhmme5786mpsgg8q981q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unity_checkin",
+            "certificate_hash": "9cbe600c6626405ca63a2fb42f7abf0cae05f719"
+          }
+        },
+        {
+          "client_id": "98299535962-hk13nvsctl9i0k0ktdvru9qcq8ppb0kv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZY1rt4TWeFhLNOb5ryqcSN7CNY0aSjX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98299535962-hk13nvsctl9i0k0ktdvru9qcq8ppb0kv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

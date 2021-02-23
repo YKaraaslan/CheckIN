@@ -1,0 +1,71 @@
+name: unity_checkin
+description: Unity Mobil Giriş Çıkış Uygulaması.
+
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_launcher_icons: ^0.8.1
+  cupertino_icons: ^1.0.0
+  provider: ^4.3.3
+  get: ^3.24.0
+  package_info: ^0.4.3+4
+  intl: ^0.16.1
+  wifi_info_flutter: ^1.0.3
+  permission_handler: ^5.0.1+1
+  syncfusion_flutter_calendar: ^18.4.41
+  syncfusion_localizations: ^18.4.41
+  location: ^3.2.4
+  email_validator: ^1.0.6
+  shared_preferences: ^0.5.12+4
+  fluttertoast: ^7.1.6
+  image_picker: ^0.6.7+22
+  url_launcher: ^5.7.10
+  path_provider: ^1.6.27
+
+  firebase_core: "0.7.0"
+  firebase_messaging: "^8.0.0-dev.14"
+  firebase_auth: ^0.20.0+1
+  cloud_firestore: ^0.16.0
+  firebase_storage: ^7.0.0
+  firebase_crashlytics: ^0.4.0+1
+  firebase_performance: ^0.5.0+1
+  firebase_remote_config: ^0.6.0
+  firebase_analytics: ^7.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/logo.png"
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Redressed
+      fonts:
+        - asset: assets/fonts/Redressed-Regular.ttf
+    - family: RobotoCondensed
+      fonts:
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
