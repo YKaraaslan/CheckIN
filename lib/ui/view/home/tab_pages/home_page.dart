@@ -26,7 +26,8 @@ class _HomeState extends State<Home> {
   String _dateToday = formatter.format(now), myEntryStatus = "";
 
   String _wifiName = "wifi";
-  String _wifiConst = "androidwifi";
+  String _wifiConst = "FiberHGW_TP518A_2.4GHz";
+  String _wifiConst2 = "FiberHGW_TP518A_5GHz";
   String myID = "";
   String myCompanyID = "",
       myCompanyDbRegisters = "",
@@ -525,11 +526,10 @@ class _HomeState extends State<Home> {
               child: Center(child: Text(snapshot.error.toString())),
             );
           } else {
-            if (snapshot.data.docs.first.get(entry_status) == "out" &&
-                _wifiName == _wifiConst) {
+            if (snapshot.data.docs.first.get(entry_status) == "out" && (_wifiName == _wifiConst || _wifiName == _wifiConst2)) {
               return getIn();
             } else if (snapshot.data.docs.first.get(entry_status) == "in" &&
-                _wifiName == _wifiConst) {
+                (_wifiName == _wifiConst || _wifiName == _wifiConst2)) {
               return getOut();
             } else {
               return Container();
@@ -1486,7 +1486,7 @@ class Search extends SearchDelegate {
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    List<String> recentList = ["text123123", "text4125412412"];
+    List<String> recentList = ["text", "text"];
     List<String> suggestionList = [];
     query.isEmpty
         ? suggestionList = recentList

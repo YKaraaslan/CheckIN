@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_localizations/syncfusion_localizations.dart';
@@ -34,15 +33,6 @@ class MaterialAppWithTheme extends StatelessWidget {
       defaultTransition: Transition.cupertino,
       theme: theme.getTheme(),
       themeMode: ThemeMode.light,
-      localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        SfGlobalLocalizations.delegate
-      ],
-      supportedLocales: [
-        const Locale('tr'),
-      ],
-      locale: const Locale('tr'),
       home: HomePage(),
     );
   }
